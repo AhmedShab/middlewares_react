@@ -7,6 +7,6 @@ export function fetchUsers() {
       { name: 'Jane' },
       { name: 'Alex' },
       { name: 'Jim' }
-    ];
+    ]
   };
 }
