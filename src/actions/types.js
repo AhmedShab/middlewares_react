@@ -1,1 +1,1 @@
-import { FETCH_USERS } from '../actions/types';
+export const FETCH_USERS = 'fetch_users';

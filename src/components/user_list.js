@@ -1,8 +1,15 @@
 import React , { Component } from 'react';
 import { connect } from 'react-redux';
+import * as actions from '../actions';
 
 class UserList extends Component {
+
+  componentWillMount() {
+    this.props.fetchUsers();
+  }
+
   renderUser(user){
+    console.log('are you there?');
     return (
       <div className="card card-block">
         <h4 className="card-title">{user.name}</h4>
@@ -25,4 +32,4 @@ function mapStateToProps(state){
   return { users: state.users };
 }
 
-export default connect(mapStateToProps)(UserList);
+export default connect(mapStateToProps, actions)(UserList);
