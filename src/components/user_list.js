@@ -9,7 +9,6 @@ class UserList extends Component {
   }
 
   renderUser(user){
-    console.log('are you there?');
     return (
       <div className="card card-block">
         <h4 className="card-title">{user.name}</h4>
@@ -21,7 +20,7 @@ class UserList extends Component {
 
   render() {
     return (
-      <div>
+      <div className="user-list">
         {this.props.users.map(this.renderUser)}
       </div>
     );
